@@ -1,7 +1,8 @@
-import React from 'react';
+import { React, useRef } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import Image from 'next/image';
-import { Carousel } from 'antd';
+import { LeftOutlined, RightOutlined } from '@ant-design/icons';
+import { Button } from 'antd';
 const contentStyle = {
     height: '400px',
     color: '#fff',
@@ -24,15 +25,34 @@ const swiperSlider = [
 ]
 
 const SwiperSlider = () => {
+    const sliderRef = useRef(null);
+    const options = {
+        dots: false,
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        slidesPerView: 1,
+        spaceBetween: 50,
+        pagination: { clickable: true },
+    };
+
+    const next = () => {
+        sliderRef.current.slickNext();
+        console.log(sliderRef.current,"dgfhfhghgfhnghhnghhtyhtghghb")
+    };
+
+    const previous = () => {
+        sliderRef.current.slickPrev();
+    };
     return (
         <div>
             <div className=''>
                 <Swiper
-                    navigation
-                    pagination={{ clickable: true }}
-                    scrollbar={{ draggable: true }}
-                    spaceBetween={50}
-                    slidesPerView={1}
+                    {...options}
+                    ref={sliderRef}
+                
                 >
                     {swiperSlider.map((item, index) => (
                         <SwiperSlide key={index}>
@@ -53,6 +73,14 @@ const SwiperSlider = () => {
                         </SwiperSlide>
                     ))}
                 </Swiper>
+            </div>
+            <div className="flex justify-between gap-2 px-[6.6rem]">
+                <Button onClick={previous} className={`cursor-pointer h-[3rem] w-[3rem] rounded-full flex items-center justify-center`}>
+                    <LeftOutlined />
+                </Button>
+                <Button onClick={next} className={`cursor-pointer h-[3rem] w-[3rem] rounded-full flex items-center justify-center`}>
+                    <RightOutlined />
+                </Button>
             </div>
         </div>
     )

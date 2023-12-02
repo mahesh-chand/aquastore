@@ -1,8 +1,9 @@
+import { React, useState } from 'react';
 import Head from 'next/head';
 import Image from 'next/image'
 import Link from 'next/link';
-import { FaSearch, FaUser, FaShoppingCart, FaEnvelope, FaPhone } from "react-icons/fa";
-import { Dropdown, Space } from 'antd';
+import { FaSearch, FaUser, FaShoppingCart, FaEnvelope, FaPhone, FaFacebook } from "react-icons/fa";
+import { Dropdown, Space, Affix, Button } from 'antd';
 import { DownOutlined } from '@ant-design/icons';
 
 const currancy = [
@@ -372,10 +373,11 @@ const locations = [
 ]
 
 const Layout = ({ children, description, keywords }) => {
+    const [container, setContainer] = useState(null);
     return (
         <>
             <Head>
-                <title>Login - wapinstitute.com</title>
+                <title>aquastore</title>
                 <meta name="description" content={description} />
                 <meta name="keywords" content={keywords} />
                 <meta name="robots" content="index,follow" />
@@ -458,82 +460,91 @@ const Layout = ({ children, description, keywords }) => {
                         </div>
                     </div>
                 </div>
-                <div className='px-[6.6rem]'>
-                    <div className='flex items-center'>
-                        <div>
-                            <Dropdown
-                                menu={{
-                                    items: fishes,
-                                }}
-                            >
-                                <a className='text-[0.8rem] font-semibold' onClick={(e) => e.preventDefault()}>
-                                    <Space style={{height:"81px",width:"150px"}} className='border-r-[1px] border-gray-300 flex justify-start'>
-                                        Fishes
-                                        <DownOutlined />
-                                    </Space>
-                                </a>
-                            </Dropdown>
+                <Affix>
+                    <div className='bg-white border-b-[1px] border-gray-300'>
+                        <div className='px-[6.6rem]'>
+                            <div className='flex items-center'>
+                                <div>
+                                    <Dropdown
+                                        menu={{
+                                            items: fishes,
+                                        }}
+                                    >
+                                        <a className='text-[0.8rem] font-semibold' onClick={(e) => e.preventDefault()}>
+                                            <Space style={{ height: "81px", width: "150px" }} className='border-r-[1px] border-gray-300 flex justify-start'>
+                                                Fishes
+                                                <DownOutlined />
+                                            </Space>
+                                        </a>
+                                    </Dropdown>
+                                </div>
+                                <div>
+                                    <Dropdown
+                                        menu={{
+                                            items: exoticFishes,
+                                        }}
+                                    >
+                                        <a className='text-[0.8rem] font-semibold' onClick={(e) => e.preventDefault()}>
+                                            <Space style={{ height: "81px", width: "150px" }} className='border-r-[1px] border-gray-300 flex justify-center'>
+                                                Exotic Fishes
+                                                <DownOutlined />
+                                            </Space>
+                                        </a>
+                                    </Dropdown>
+                                </div>
+                                <div>
+                                    <Dropdown
+                                        menu={{
+                                            items: plants,
+                                        }}
+                                    >
+                                        <a className='text-[0.8rem] font-semibold' onClick={(e) => e.preventDefault()}>
+                                            <Space style={{ height: "81px", width: "150px" }} className='border-r-[1px] border-gray-300 flex justify-center'>
+                                                Plants
+                                                <DownOutlined />
+                                            </Space>
+                                        </a>
+                                    </Dropdown>
+                                </div>
+                                <div>
+                                    <Dropdown
+                                        menu={{
+                                            items: exoticPlants,
+                                        }}
+                                    >
+                                        <a className='text-[0.8rem] font-semibold' onClick={(e) => e.preventDefault()}>
+                                            <Space style={{ height: "81px", width: "150px" }} className='border-r-[1px] border-gray-300 flex justify-center'>
+                                                Exotic Plants
+                                                <DownOutlined />
+                                            </Space>
+                                        </a>
+                                    </Dropdown>
+                                </div>
+                                <div>
+                                    <Dropdown
+                                        menu={{
+                                            items: foodAccessories,
+                                        }}
+                                    >
+                                        <a className='text-[0.8rem] font-semibold' onClick={(e) => e.preventDefault()}>
+                                            <Space style={{ height: "81px", width: "150px" }} className='border-r-[1px] border-gray-300 flex justify-center'>
+                                                Food Accessories
+                                                <DownOutlined />
+                                            </Space>
+                                        </a>
+                                    </Dropdown>
+                                </div>
+                                <div className='text-[0.8rem] font-semibold pl-4 pt-[19px]'>Blog<p className='text-gray-600'>U need to know</p></div>
+                            </div>
                         </div>
-                        <div>
-                            <Dropdown
-                                menu={{
-                                    items: exoticFishes,
-                                }}
-                            >
-                                <a className='text-[0.8rem] font-semibold' onClick={(e) => e.preventDefault()}>
-                                    <Space style={{height:"81px",width:"150px"}} className='border-r-[1px] border-gray-300 flex justify-center'>
-                                        Exotic Fishes
-                                        <DownOutlined />
-                                    </Space>
-                                </a>
-                            </Dropdown>
-                        </div>
-                        <div>
-                            <Dropdown
-                                menu={{
-                                    items: plants,
-                                }}
-                            >
-                                <a className='text-[0.8rem] font-semibold' onClick={(e) => e.preventDefault()}>
-                                    <Space style={{height:"81px",width:"150px"}} className='border-r-[1px] border-gray-300 flex justify-center'>
-                                        Plants
-                                        <DownOutlined />
-                                    </Space>
-                                </a>
-                            </Dropdown>
-                        </div>
-                        <div>
-                            <Dropdown
-                                menu={{
-                                    items: exoticPlants,
-                                }}
-                            >
-                                <a className='text-[0.8rem] font-semibold' onClick={(e) => e.preventDefault()}>
-                                    <Space style={{height:"81px",width:"150px"}} className='border-r-[1px] border-gray-300 flex justify-center'>
-                                        Exotic Plants
-                                        <DownOutlined />
-                                    </Space>
-                                </a>
-                            </Dropdown>
-                        </div>
-                        <div>
-                            <Dropdown
-                                menu={{
-                                    items: foodAccessories,
-                                }}
-                            >
-                                <a className='text-[0.8rem] font-semibold' onClick={(e) => e.preventDefault()}>
-                                    <Space style={{height:"81px",width:"150px"}} className='border-r-[1px] border-gray-300 flex justify-center'>
-                                        Food Accessories
-                                        <DownOutlined />
-                                    </Space>
-                                </a>
-                            </Dropdown>
-                        </div>
-                        <div className='text-[0.8rem] font-semibold pl-4 pt-[19px]'>Blog<p className='text-gray-600'>U need to know</p></div>
                     </div>
-                </div>
+                </Affix>
             </header>
+            <div className='flex justify-end absolute'>
+                <Affix offsetTop={260} offsetBottom={500}>
+                    <div  className='bg-blue-700 h-12 w-12 flex justify-center items-center'><FaFacebook className='text-white'/></div>
+                </Affix>
+            </div>
             <div>{children}</div>
             <footer>
                 <div className='bg-slate-50'>
