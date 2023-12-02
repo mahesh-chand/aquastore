@@ -105,17 +105,17 @@ const Login = () => {
                     </div>
                     <div className="sidebar pl-6 w-[30%]">
                         <div className='bg-white h-full w-full py-9'>
-                            <ul>
+                            <ul className='pb-4'>
                                 <li className='pl-7 text-[14px] text-gray-800 pb-2'>
                                     <Link className='hover:text-blue-500' href=''>Login /</Link>
                                     <Link className='hover:text-blue-500' href=''>Register</Link>
                                 </li>
-                                <div className="bg-gray-300 h-[1px]"></div>
+                                <div className="bg-gray-200 h-[1px]"></div>
                                 {sidelink.map((element, index) => {
                                     return (
                                         <>
                                             <li className='pl-7 pt-3 pb-2 text-[14px] text-gray-800 hover:text-blue-500'>{element.label}</li>
-                                            <div className="bg-gray-300 h-[1px]"></div>
+                                            <div className="bg-gray-200 h-[1px]"></div>
                                         </>
                                     )
                                 })}
