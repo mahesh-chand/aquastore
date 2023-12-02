@@ -375,7 +375,7 @@ const Layout = ({ children, description, keywords }) => {
     return (
         <>
             <Head>
-                <title>Login - wapinstitute.com</title>
+                <title>Aquastore</title>
                 <meta name="description" content={description} />
                 <meta name="keywords" content={keywords} />
                 <meta name="robots" content="index,follow" />
