@@ -51,7 +51,7 @@ const Product = () => {
                 <div className='px-[6.6rem] flex'>
                     <div className='bg-white w-full'>
                         <div>
-                            <div>
+                            <div className=''>
                                 <div className='bg-blue-400'>
                                     <h4>Categories</h4>
                                 </div>
@@ -60,17 +60,13 @@ const Product = () => {
                                         Hot Deals
                                     </Menu.Item>
                                     <Menu mode="inline" theme="dark">
-                                    <Menu.Item key="3">Aquarium</Menu.Item>
                                         <SubMenu key="sub1" title="Aquarium">
                                             <Menu.Item key="3">Accessories</Menu.Item>
                                             <SubMenu key="sub1-1" title="AQUAStore">
                                                 <Menu.Item key="6">Team 1</Menu.Item>
                                                 <Menu.Item key="8">Team 2</Menu.Item>
                                             </SubMenu>
-                                            <SubMenu key="sub1-1" title="Exotic Live Plants">
-                                                <Menu.Item key="6">Team 1</Menu.Item>
-                                                <Menu.Item key="8">Team 2</Menu.Item>
-                                            </SubMenu>
+                                            <Menu.Item key="3">Fish Food</Menu.Item>
                                         </SubMenu>
                                     </Menu>
                                 </Menu>
