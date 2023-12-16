@@ -151,7 +151,7 @@ const foodAccessories = [
 const topMenus = [
     {
         label: "My Account",
-        href: "/",
+        href: "/login",
     },
     {
         label: "Wish List (0)",
@@ -159,7 +159,7 @@ const topMenus = [
     },
     {
         label: "Shopping Cart",
-        href: "/",
+        href: "/view-cart",
     },
     {
         label: "Checkout",
@@ -253,7 +253,7 @@ const extras = [
 const myAccount = [
     {
         label: 'My Account',
-        href: '#'
+        href: '/login'
     },
     {
         label: 'Order History',
@@ -409,7 +409,7 @@ const Layout = ({ children, description, keywords }) => {
                                     topMenus.map((item, index) => (
                                         <li className='text-[0.8rem]'>
                                             <Link href={item.href} legacyBehavior key={index}>
-                                                <a className="flex gap-1 text-gray-500 items-center">{item.icon}{item.label}</a>
+                                                <a className="flex gap-1 text-gray-500 items-center hover:text-white">{item.icon}{item.label}</a>
                                             </Link>
                                         </li>
                                     ))

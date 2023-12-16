@@ -226,8 +226,8 @@ const Register = () => {
                         <div className='bg-white h-full w-full py-9'>
                             <ul className='pb-4'>
                                 <li className='pl-7 text-[14px] text-gray-800 pb-2'>
-                                    <Link className='hover:text-blue-500' href=''>Login /</Link>
-                                    <Link className='hover:text-blue-500' href=''>Register</Link>
+                                    <Link className='hover:text-blue-500' href='/login'>Login /</Link>
+                                    <Link className='hover:text-blue-500' href='/register'>Register</Link>
                                 </li>
                                 <div className="bg-gray-200 h-[1px]"></div>
                                 {sidelink.map((element, index) => {

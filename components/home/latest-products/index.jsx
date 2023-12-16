@@ -16,168 +16,168 @@ const latestProducts = [
         title: 'Demasoni Cichlid Fish',
         price: 'Rs.100/-',
         oldprice: '',
-        href: '/'
+        href: '/product'
     },
     {
         src: '/images/albino-electric-yellow.jpg',
         title: 'Albino Yellow Orange Cichlid Fish',
         price: 'Rs.100/-',
         oldprice: '',
-        href: '/'
+        href: '/product'
     },
     {
         src: '/images/Golden-Yellow-Snail.jpg',
         title: 'Golden Yellow Lab Cichlid Fish',
         price: 'Rs.100/-',
         oldprice: '',
-        href: '/'
+        href: '/product'
     },
     {
         src: '/images/raifest-cichild.png',
         title: 'Raifest Premium Fish Food (cichlid Pellets) -60Gm',
         price: 'Rs.100/-',
         oldprice: 'Rs280/-',
-        href: '/'
+        href: '/product'
     },
     {
         src: '/images/raifest-cichild.png',
         title: 'Demasoni Cichlid Fish',
         price: 'Rs.100/-',
         oldprice: '',
-        href: '/'
+        href: '/product'
     },
     {
         src: '/images/raifest-cichild.png',
         title: 'Demasoni Cichlid Fish',
         price: 'Rs.100/-',
         oldprice: '',
-        href: '/'
+        href: '/product'
     },
     {
         src: '/images/raifest-cichild.png',
         title: 'Demasoni Cichlid Fish',
         price: 'Rs.100/-',
         oldprice: '',
-        href: '/'
+        href: '/product'
     },
     {
         src: '/images/raifest-cichild.png',
         title: 'Demasoni Cichlid Fish',
         price: 'Rs.100/-',
         oldprice: '',
-        href: '/'
+        href: '/product'
     },
     {
         src: '/images/raifest-cichild.png',
         title: 'Demasoni Cichlid Fish',
         price: 'Rs.100/-',
         oldprice: '',
-        href: '/'
+        href: '/product'
     },
     {
         src: '/images/raifest-cichild.png',
         title: 'Demasoni Cichlid Fish',
         price: 'Rs.100/-',
         oldprice: '',
-        href: '/'
+        href: '/product'
     },
     {
         src: '/images/raifest-cichild.png',
         title: 'Demasoni Cichlid Fish',
         price: 'Rs.100/-',
         oldprice: '',
-        href: '/'
+        href: '/product'
     },
     {
         src: '/images/Cuphea-Anagalloidea.jpg',
         title: 'Demasoni Cichlid Fish',
         price: 'Rs.100/-',
         oldprice: '',
-        href: '/'
+        href: '/product'
     },
     {
         src: '/images/Red-Cabomba.jpg',
         title: 'Demasoni Cichlid Fish',
         price: 'Rs.100/-',
         oldprice: '',
-        href: '/'
+        href: '/product'
     },
     {
         src: '/images/GreenCabomba.jpg',
         title: 'Demasoni Cichlid Fish',
         price: 'Rs.100/-',
         oldprice: '',
-        href: '/'
+        href: '/product'
     },
     {
         src: '/images/Cabomba-belem-Red.jpeg',
         title: 'Demasoni Cichlid Fish',
         price: 'Rs.100/-',
         oldprice: '',
-        href: '/'
+        href: '/product'
     },
     {
         src: '/images/AnubiasNanaLongWavy.jpg',
         title: 'Demasoni Cichlid Fish',
         price: 'Rs.100/-',
         oldprice: '',
-        href: '/'
+        href: '/product'
     },
     {
         src: '/images/AnubiasDragonClaw.jpg',
         title: 'Demasoni Cichlid Fish',
         price: 'Rs.100/-',
         oldprice: '',
-        href: '/'
+        href: '/product'
     },
     {
         src: '/images/AnubiasLancelota.jpg',
         title: 'Demasoni Cichlid Fish',
         price: 'Rs.100/-',
         oldprice: '',
-        href: '/'
+        href: '/product'
     },
     {
         src: '/images/lindernia-roundifolia-variegated.jpg',
         title: 'Demasoni Cichlid Fish',
         price: 'Rs.100/-',
         oldprice: '',
-        href: '/'
+        href: '/product'
     },
     {
         src: '/images/rotala-sp-yarabje.jpg',
         title: 'Demasoni Cichlid Fish',
         price: 'Rs.100/-',
         oldprice: '',
-        href: '/'
+        href: '/product'
     },
     {
         src: '/images/ratala-sp-wayanad.jpg',
         title: 'Demasoni Cichlid Fish',
         price: 'Rs.100/-',
         oldprice: '',
-        href: '/'
+        href: '/product'
     },
     {
         src: '/images/widow-tetra-collection.jpg',
         title: 'Demasoni Cichlid Fish',
         price: 'Rs.100/-',
         oldprice: '',
-        href: '/'
+        href: '/product'
     },
     {
         src: '/images/Assorted_Danio_Collection.jpg',
         title: 'Demasoni Cichlid Fish',
         price: 'Rs.100/-',
         oldprice: '',
-        href: '/'
+        href: '/product'
     },
     {
         src: '/images/electric-glo-green-barb.jpg',
         title: 'Demasoni Cichlid Fish',
         price: 'Rs.100/-',
         oldprice: '',
-        href: '/'
+        href: '/product'
     }
 ]
 
