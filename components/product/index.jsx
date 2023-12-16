@@ -32,6 +32,11 @@ const Product = () => {
                             <h1 className="text-[30px] font-semibold pb-2 pl-1">Demasoni Cichlid Fish</h1>
                             <div className="bg-gray-300 h-[2px] w-76"></div>
                         </div>
+                        <div>
+                            <div>
+
+                            </div>
+                        </div>
                         <div className='py-4'>
                             <Breadcrumb
                                 separator=">"
@@ -46,14 +51,19 @@ const Product = () => {
                                 ]}
                             />
                         </div>
+                        <div>
+                            <div>
+                                
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div className='px-[6.6rem] flex'>
-                    <div className='bg-white w-full'>
+                    <div className='flex gap-6 bg-white w-full'>
                         <div>
-                            <div className=''>
-                                <div className='bg-blue-400'>
-                                    <h4>Categories</h4>
+                            <div className='w-60'>
+                                <div className='bg-blue-400 h-16 text-white font-semibold flex items-center'>
+                                    <h4 className='pl-6'>Categories</h4>
                                 </div>
                                 <Menu mode="inline" theme="dark">
                                     <Menu.Item key="1">
@@ -73,7 +83,9 @@ const Product = () => {
                             </div>
                         </div>
                         <div>
-
+                            <div>
+                                <img src='./images/demosoni-cichlid.jpg' />
+                            </div>
                         </div>
                         <div>
                             <div className='flex gap-4'>
