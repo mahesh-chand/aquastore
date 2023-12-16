@@ -549,7 +549,7 @@ const Layout = ({ children, description, keywords }) => {
             <footer>
                 <div className='bg-slate-50'>
                     <div>
-                        <div className='pt-6 pb-16 px-[6.6rem]'>
+                        <div className='pt-10 pb-16 px-[6.6rem]'>
                             <h1 className='text-[1.2rem] font-medium pb-[10px]'>Who we are?</h1>
                             <div className='bg-red-500 w-[115px] h-[2px]'></div>
                             <div className='py-7'>
